@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Review</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/icon.png" type="image/png">
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="static/logo.png" class="logo" alt="Application Logo">
+            <a href="index.html" class="login-button">Home</a>
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
     <main>
         <form id="review-form">
             <h2>Add a Review</h2>
@@ -14,11 +22,35 @@
             <input type="text" id="place" name="place" readonly>
             
             <label for="review">Review:</label>
-            <textarea id="review" name="review" required></textarea>
+            <textarea id="review-text" name="review" required></textarea>
             
             <button type="submit">Submit</button>
         </form>
     </main>
-    <script src="scripts.js"></script>
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+    <script src="static/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const placeId = getPlaceIdFromURL();
+            const placeInput = document.getElementById('place');
+
+            async function fetchPlaceDetailsForForm() {
+                const token = getCookie('token');
+                const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
+                const response = await fetch(`http://127.0.0.1:5000/places/${placeId}`, { headers });
+
+                if (response.ok) {
+                    const place = await response.json();
+                    placeInput.value = `${place.name} (${place.city_name}, ${place.country_name})`;
+                } else {
+                    console.error('Failed to fetch place details:', response.statusText);
+                }
+            }
+
+            fetchPlaceDetailsForForm();
+        });
+    </script>
 </body>
 </html>
