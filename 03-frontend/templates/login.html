@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage displayed in the browser tab -->
     <title>Login</title>
+    <!-- Link to external CSS stylesheet for styling the page -->
     <link rel="stylesheet" href="/03-frontend/static/styles.css">
+    <!-- Link to the favicon displayed in the browser tab -->
     <link rel="icon" href="/03-frontend/static/icon.png" type="image/png">
 </head>
 <body>
+    <!-- Header section containing navigation links -->
     <header>
         <nav>
+            <!-- Logo image for the application -->
             <img src="/03-frontend/static/logo.png" alt="Application Logo" class="logo">
+            <!-- Navigation link to the home page -->
             <a href="/" class="login-button">Home</a>
+            <!-- Logout link, initially hidden (style set to none) -->
             <a href="#" id="logout-link" class="logout-button" style="display: none;">Logout</a>
         </nav>
     </header>
+    <!-- Main content area of the page -->
     <main>
+        <!-- Form for user login -->
         <form id="login-form">
             <h2>Login</h2>
+            <!-- Label and input for the user's email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+            <!-- Label and input for the user's password -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            
+            <!-- Submit button for the login form -->
             <button type="submit">Login</button>
         </form>
     </main>
+    <!-- Footer section of the page -->
     <footer>
+        <!-- Copyright notice -->
         <p>All rights reserved.</p>
     </footer>
+    <!-- Link to external JavaScript file for functionality -->
     <script src="/03-frontend/static/scripts.js"></script>
 </body>
 </html>
