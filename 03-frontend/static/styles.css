@@ -12,7 +12,7 @@ body {
 
 /* Header and Footer */
 header, footer {
-    background-color: #6482AD;
+    background-color: #41ed86;
     padding: 10px 20px;
     text-align: center;
 }
@@ -74,7 +74,7 @@ main {
     display: block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #6482AD;
+    background-color: #5bff9c;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -82,7 +82,7 @@ main {
 }
 
 .details-button:hover {
-    background-color: #7FA1C3;
+    background-color: #41ed86;
 }
 
 /* Form Styles */
@@ -109,17 +109,82 @@ form input, form textarea, form button {
 }
 
 form button {
-    background-color: #6482AD;
+    background-color: #25d042;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #7FA1C3;
+    background-color: #82c37f;
 }
 
 /* Additional Styles */
 .add-review, .form {
     margin-top: 20px;
 }
+
+/* included settings for assuring footer stays at bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #41ed86;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* for places to rent */
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .place-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .place-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .place-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .place-info {
+    padding: 10px;
+  }
+  
+  .place-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .place-info p {
+    margin: 5px 0;
+  }

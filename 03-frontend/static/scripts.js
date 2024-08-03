@@ -277,3 +277,38 @@ function displayPlaceDetails(place) {
     locationElement.textContent = `Location: ${place.city_name}, ${place.country_name}`;
     place
 }
+// THIS IS USED TO CONNECT TO A DB OR API TO LOAD LOCATIONS FROM SOMEWHERE ELSE
+//
+// const places = [
+//     {
+//       image: 'place1.jpg',
+//       title: 'Cozy Apartment in the City',
+//       description: 'Located in the heart of the city, this cozy apartment offers all the amenities you need.',
+//       price: '$120/night',
+//     },
+//     {
+//       image: 'place2.jpg',
+//       title: 'Beachfront Villa',
+//       description: 'Enjoy a relaxing stay at our beachfront villa with stunning ocean views.',
+//       price: '$200/night',
+//     },
+//     // Add more places as needed
+//   ];
+  
+//   const placesContainer = document.querySelector('.places-container');
+  
+//   places.forEach(place => {
+//     const placeCard = document.createElement('div');
+//     placeCard.classList.add('place-card');
+  
+//     placeCard.innerHTML = `
+//       <img src="${place.image}" alt="${place.title}" class="place-image">
+//       <div class="place-info">
+//         <h3>${place.title}</h3>
+//         <p>${place.description}</p>
+//         <p><strong>Price:</strong> ${place.price}</p>
+//       </div>
+//     `;
+  
+//     placesContainer.appendChild(placeCard);
+//   });

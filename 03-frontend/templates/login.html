@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding for the document -->
     <meta charset="UTF-8">
-    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the webpage displayed in the browser tab -->
     <title>Login</title>
-    <!-- Link to external CSS stylesheet for styling the page -->
+    <!-- External CSS for styling -->
     <link rel="stylesheet" href="/static/styles.css">
-    <!-- Link to the favicon displayed in the browser tab -->
+    <!-- Favicon for the website -->
     <link rel="icon" href="/static/icon.png" type="image/png">
 </head>
 <body>
-    <!-- Header section containing navigation links -->
     <header>
         <nav>
-            <!-- Logo image for the application -->
+            <!-- Logo and navigation links -->
             <img src="/static/logo.png" alt="Application Logo" class="logo">
-            <!-- Navigation link to the home page -->
-            <a href="/" class="login-button">Home</a>
-            <!-- Logout link, initially hidden (style set to none) -->
+            <a href="/templates/index.html" class="login-button">Home</a>
             <a href="#" id="logout-link" class="logout-button" style="display: none;">Logout</a>
         </nav>
     </header>
-    <!-- Main content area of the page -->
     <main>
-        <!-- Form for user login -->
+        <!-- User login form -->
         <form id="login-form">
             <h2>Login</h2>
-            <!-- Label and input for the user's email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <!-- Label and input for the user's password -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-            <!-- Submit button for the login form -->
             <button type="submit">Login</button>
         </form>
     </main>
-    <!-- Footer section of the page -->
     <footer>
-        <!-- Copyright notice -->
         <p>All rights reserved.</p>
     </footer>
-    <!-- Link to external JavaScript file for functionality -->
+    <!-- External JavaScript for functionality -->
     <script src="/static/scripts.js"></script>
 </body>
 </html>
