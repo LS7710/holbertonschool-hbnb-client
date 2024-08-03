@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Details</title>
-    <link rel="stylesheet" href="/03-frontend/static/styles.css">
-    <link rel="icon" href="/03-frontend/static/icon.png" type="image/png">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/icon.png" type="image/png">
 </head>
 <body>
     <header>
         <nav>
-            <img src="/03-frontend/static/logo.png" class="logo" alt="Application Logo">
+            <img src="/static/logo.png" class="logo" alt="Application Logo">
             <a href="/" class="login-button">Home</a>
-            <a href="/03-frontend/templates/login.html" id="login-link" class="login-button">Login</a>
+            <a href="/templates/login.html" id="login-link" class="login-button">Login</a>
             <a href="#" id="logout-link" class="logout-button" style="display: none;">Logout</a>
         </nav>
     </header>
@@ -38,7 +38,7 @@
             All rights reserved
         </p>
     </footer>
-    <script src="/03-frontend/static/scripts.js"></script>
+    <script src="/static/scripts.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const placeId = getPlaceIdFromURL();
