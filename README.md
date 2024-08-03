@@ -40,7 +40,7 @@ Ensure the form is accessible only to authenticated users, redirecting others to
 [JavaScript ES6 Features](https://developer.mozilla.org/en-US/docs/Web/JavaScript)\
 [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)\
 [Handling Cookies in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie)\
-[Client-Side Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)\
+[Client-Side Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 ## Testing the frontend with a Mock API
 To test your frontend with the backend, you can use this Mock API if yours (from part 2) doesn’t work.
 This Mock API should allow you to make API calls and test all the frontend functionalities that you will implement in this project.
