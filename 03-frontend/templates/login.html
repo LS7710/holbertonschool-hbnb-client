@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/03-frontend/static/styles.css">
+    <link rel="icon" href="/03-frontend/static/icon.png" type="image/png">
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="/03-frontend/static/logo.png" alt="Application Logo" class="logo">
+            <a href="/" class="login-button">Home</a>
+            <a href="#" id="logout-link" class="logout-button" style="display: none;">Logout</a>
+        </nav>
+    </header>
     <main>
         <form id="login-form">
             <h2>Login</h2>
@@ -19,6 +27,9 @@
             <button type="submit">Login</button>
         </form>
     </main>
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
     <script src="/03-frontend/static/scripts.js"></script>
 </body>
 </html>
