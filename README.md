@@ -42,5 +42,5 @@ Ensure the form is accessible only to authenticated users, redirecting others to
 [Handling Cookies in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie)\
 [Client-Side Form Validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 ## Testing the frontend with a Mock API
-To test your frontend with the backend, you can use this Mock API if yours (from part 2) doesn’t work.
+To test your frontend with the backend, you can use this [Mock API](https://github.com/Holberton-Uy/hbnb-public/tree/main/03-frontend/mock-api) if yours (from part 2) doesn’t work.
 This Mock API should allow you to make API calls and test all the frontend functionalities that you will implement in this project.
