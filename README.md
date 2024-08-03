@@ -35,12 +35,12 @@ Provide access to the add review form if the user is authenticated.
 Implement the form to add a review for a place.
 Ensure the form is accessible only to authenticated users, redirecting others to the index page.
 ## Resources
-HTML5 Documentation
-CSS3 Documentation
-JavaScript ES6 Features
-Fetch API
-Handling Cookies in JavaScript
-Client-Side Form Validation
+[HTML5 Documentation](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)\
+CSS3 Documentation\
+JavaScript ES6 Features\
+Fetch API\
+Handling Cookies in JavaScript\
+Client-Side Form Validation\
 ## Testing the frontend with a Mock API
 To test your frontend with the backend, you can use this Mock API if yours (from part 2) doesn’t work.
 This Mock API should allow you to make API calls and test all the frontend functionalities that you will implement in this project.
